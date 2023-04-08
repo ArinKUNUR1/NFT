@@ -50,6 +50,7 @@ nav button {
   cursor: pointer;
   color: white;
   font-size: 16px;
+  border: none;
 }
 
 nav button:hover {
@@ -101,6 +102,8 @@ nav button:hover {
   color: white;
   font-size: 15px;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
 }
 
 .about button:hover {
@@ -134,7 +137,7 @@ nav button:hover {
 
 .category li {
   background-color: gray;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 60px;
   list-style: none;
 }
@@ -155,7 +158,14 @@ nav button:hover {
   padding: 10px;
   border-radius: 10px;
   color: black;
-  
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 2px 2px 30px aqua;;
+  transition: all 0.5s;
 }
 
 .card img {
@@ -213,6 +223,7 @@ nav button:hover {
   transition: all 0.5s;
   border-radius: 10px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .time button:hover {
@@ -223,11 +234,11 @@ nav button:hover {
 
 .add {
   margin: -120px;
-  width: 110vw;
+  width: 101vw;
   min-height: 150px;
   background-color: #00abb3;
   margin-top: 200px;
-  font-size: 136px;
+  font-size: 126px;
   line-height: 146px;
   padding: 20px;
   text-align: center;
