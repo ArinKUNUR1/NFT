@@ -11,6 +11,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: white;
   padding: 0 100px;
+  overflow-x: hidden;
 }
 
 nav {
@@ -24,6 +25,10 @@ nav ul {
   display: flex;
   gap: 20px;
   list-style: none;
+}
+
+nav h1 {
+  cursor: pointer;
 }
 
 nav ul li {
