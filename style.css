@@ -147,6 +147,15 @@ nav button:hover {
   list-style: none;
 }
 
+.bars {
+  font-size: 15px;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
 .cards-container {
   max-width: 900px;
   min-height: 500px;
@@ -169,7 +178,8 @@ nav button:hover {
 
 .card:hover {
   transform: translateY(-15px);
-  box-shadow: 2px 2px 30px aqua;;
+  box-shadow: 2px 2px 30px aqua;
+  ;
   transition: all 0.5s;
 }
 
@@ -216,7 +226,7 @@ nav button:hover {
 }
 
 .time p {
-  background-color: rgb(195, 195, 195 );
+  background-color: rgb(195, 195, 195);
   border-radius: 20px;
   padding: 10px;
 }
@@ -262,30 +272,33 @@ nav button:hover {
   min-width: 600px;
   min-height: 600px;
 }
+
 .infos1 h1 {
   font-size: 40px;
   margin-bottom: 50px;
 }
+
 .info1 {
   display: flex;
   gap: 20px;
-  border: 1px solid #292b2d;
   justify-content: space-between;
 }
+
 .info-text {
   min-width: 300px;
   max-width: 500px;
   min-height: 200px;
-  background-color: #21D4FD;
-  background-image: linear-gradient(180deg, #21D4FD 0%, #B721FF 100%); 
+  background-image: linear-gradient(180deg, #21D4FD 0%, #B721FF 100%);
   border-radius: 10px;
   padding: 20px;
   display: flex;
   flex-direction: column;
 }
+
 .info-text img {
   width: 35px;
 }
+
 .info-text h1 {
   font-size: 30px;
 }
@@ -298,10 +311,103 @@ footer {
   margin: 0 auto;
   padding-bottom: 100px;
 }
-footer p {
+
+.description-1 {
+  gap: 40px;
+  display: flex;
+}
+
+.description-1 p {
   text-align: justify;
-  background-color: #FA8BFF;
-  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+  background: rgb(44, 38, 38);
   padding: 15px;
   border-radius: 10px;
+  color: white;
+  border: none;
+}
+
+/* *Responsive Yapılar* */
+
+@media (max-width:1200px) {
+  .hero {
+    display: flex;
+    gap: 100px;
+  }
+
+  .slogan h1 {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -3px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .toggle {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .category li {
+    display: none;
+  }
+
+  .category li {
+    padding: 4px;
+    border-radius: 0;
+  }
+
+  .bars {
+    display: flex;
+  }
+
+  .category li:nth-child(2) {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .category li:nth-child(6) {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .add {
+    display: none;
+  }
+
+  .infos1 {
+    margin-bottom: 100px;
+  }
+
+  .info1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-text {
+    max-width: 300px;
+  }
+
+  .info-text p {
+    max-width: 300px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer h1 {
+    text-align: center;
+  }
+
+  .description-1 {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+  }
 }
